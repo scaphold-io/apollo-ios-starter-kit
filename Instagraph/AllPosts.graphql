@@ -1,0 +1,19 @@
+query AllPosts {
+    viewer {
+        allPosts(first: 10) {
+            edges {
+                cursor
+                node {
+                    id
+                    title
+                    blobUrl
+                    createdAt
+                }
+            }
+        }
+    }
+}
+
+
+
+

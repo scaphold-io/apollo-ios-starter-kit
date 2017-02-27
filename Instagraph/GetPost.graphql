@@ -1,0 +1,8 @@
+query GetPost($id:ID!) {
+    getPost(id:$id) {
+        id
+        title
+        createdAt
+        blobUrl
+    }
+}

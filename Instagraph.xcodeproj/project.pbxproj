@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F04A5EB1E64A97F00B55D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04A5EA1E64A97F00B55D93 /* AppDelegate.swift */; };
+		3F04A5ED1E64A97F00B55D93 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04A5EC1E64A97F00B55D93 /* FirstViewController.swift */; };
+		3F04A5F21E64A97F00B55D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A5F01E64A97F00B55D93 /* Main.storyboard */; };
+		3F04A5F41E64A97F00B55D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A5F31E64A97F00B55D93 /* Assets.xcassets */; };
+		3F04A5F71E64A97F00B55D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A5F51E64A97F00B55D93 /* LaunchScreen.storyboard */; };
+		3F04A6001E64AA0700B55D93 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F04A5FF1E64AA0700B55D93 /* Apollo.framework */; };
+		3F04A6061E64AC1A00B55D93 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A6051E64AC1A00B55D93 /* schema.json */; };
+		3F04A6081E64AC2000B55D93 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04A6071E64AC2000B55D93 /* API.swift */; };
+		3F04A60B1E64C9F400B55D93 /* AllPosts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A60A1E64C9F400B55D93 /* AllPosts.graphql */; };
+		3F04A60F1E64CA6600B55D93 /* GetPost.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A60E1E64CA6600B55D93 /* GetPost.graphql */; };
+		3F04A6111E64DAB900B55D93 /* UpdatePost.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3F04A6101E64DAB900B55D93 /* UpdatePost.graphql */; };
+		3F04A6131E64E1B900B55D93 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04A6121E64E1B900B55D93 /* PostCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F04A5E71E64A97F00B55D93 /* Instagraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F04A5EA1E64A97F00B55D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F04A5EC1E64A97F00B55D93 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3F04A5F11E64A97F00B55D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F04A5F31E64A97F00B55D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F04A5F61E64A97F00B55D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F04A5F81E64A97F00B55D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F04A5FF1E64AA0700B55D93 /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = Carthage/Build/iOS/Apollo.framework; sourceTree = "<group>"; };
+		3F04A6051E64AC1A00B55D93 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		3F04A6071E64AC2000B55D93 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3F04A60A1E64C9F400B55D93 /* AllPosts.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllPosts.graphql; sourceTree = "<group>"; };
+		3F04A60E1E64CA6600B55D93 /* GetPost.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetPost.graphql; sourceTree = "<group>"; };
+		3F04A6101E64DAB900B55D93 /* UpdatePost.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UpdatePost.graphql; sourceTree = "<group>"; };
+		3F04A6121E64E1B900B55D93 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F04A5E41E64A97E00B55D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F04A6001E64AA0700B55D93 /* Apollo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F04A5DE1E64A97E00B55D93 = {
+			isa = PBXGroup;
+			children = (
+				3F04A5E91E64A97F00B55D93 /* Instagraph */,
+				3F04A5E81E64A97F00B55D93 /* Products */,
+				3F04A5FE1E64AA0700B55D93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F04A5E81E64A97F00B55D93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F04A5E71E64A97F00B55D93 /* Instagraph.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F04A5E91E64A97F00B55D93 /* Instagraph */ = {
+			isa = PBXGroup;
+			children = (
+				3F04A6071E64AC2000B55D93 /* API.swift */,
+				3F04A6051E64AC1A00B55D93 /* schema.json */,
+				3F04A5EA1E64A97F00B55D93 /* AppDelegate.swift */,
+				3F04A5EC1E64A97F00B55D93 /* FirstViewController.swift */,
+				3F04A5F01E64A97F00B55D93 /* Main.storyboard */,
+				3F04A6121E64E1B900B55D93 /* PostCell.swift */,
+				3F04A5F31E64A97F00B55D93 /* Assets.xcassets */,
+				3F04A5F51E64A97F00B55D93 /* LaunchScreen.storyboard */,
+				3F04A5F81E64A97F00B55D93 /* Info.plist */,
+				3F04A60A1E64C9F400B55D93 /* AllPosts.graphql */,
+				3F04A60E1E64CA6600B55D93 /* GetPost.graphql */,
+				3F04A6101E64DAB900B55D93 /* UpdatePost.graphql */,
+			);
+			path = Instagraph;
+			sourceTree = "<group>";
+		};
+		3F04A5FE1E64AA0700B55D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F04A5FF1E64AA0700B55D93 /* Apollo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F04A5E61E64A97E00B55D93 /* Instagraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F04A5FB1E64A97F00B55D93 /* Build configuration list for PBXNativeTarget "Instagraph" */;
+			buildPhases = (
+				3F04A6021E64AADA00B55D93 /* Generate Apollo GraphQL API */,
+				3F04A5E31E64A97E00B55D93 /* Sources */,
+				3F04A5E41E64A97E00B55D93 /* Frameworks */,
+				3F04A5E51E64A97E00B55D93 /* Resources */,
+				3F04A6011E64AA2F00B55D93 /* Pull in Apollo Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instagraph;
+			productName = Instagraph;
+			productReference = 3F04A5E71E64A97F00B55D93 /* Instagraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F04A5DF1E64A97E00B55D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Michael Paris";
+				TargetAttributes = {
+					3F04A5E61E64A97E00B55D93 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F04A5E21E64A97E00B55D93 /* Build configuration list for PBXProject "Instagraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F04A5DE1E64A97E00B55D93;
+			productRefGroup = 3F04A5E81E64A97F00B55D93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F04A5E61E64A97E00B55D93 /* Instagraph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F04A5E51E64A97E00B55D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F04A6111E64DAB900B55D93 /* UpdatePost.graphql in Resources */,
+				3F04A6061E64AC1A00B55D93 /* schema.json in Resources */,
+				3F04A5F71E64A97F00B55D93 /* LaunchScreen.storyboard in Resources */,
+				3F04A60B1E64C9F400B55D93 /* AllPosts.graphql in Resources */,
+				3F04A5F41E64A97F00B55D93 /* Assets.xcassets in Resources */,
+				3F04A60F1E64CA6600B55D93 /* GetPost.graphql in Resources */,
+				3F04A5F21E64A97F00B55D93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F04A6011E64AA2F00B55D93 /* Pull in Apollo Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Apollo.framework",
+			);
+			name = "Pull in Apollo Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		3F04A6021E64AADA00B55D93 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F04A5E31E64A97E00B55D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F04A5EB1E64A97F00B55D93 /* AppDelegate.swift in Sources */,
+				3F04A6081E64AC2000B55D93 /* API.swift in Sources */,
+				3F04A5ED1E64A97F00B55D93 /* FirstViewController.swift in Sources */,
+				3F04A6131E64E1B900B55D93 /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F04A5F01E64A97F00B55D93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F04A5F11E64A97F00B55D93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F04A5F51E64A97F00B55D93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F04A5F61E64A97F00B55D93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F04A5F91E64A97F00B55D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F04A5FA1E64A97F00B55D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F04A5FC1E64A97F00B55D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Instagraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scaphold.Instagraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F04A5FD1E64A97F00B55D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Instagraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scaphold.Instagraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F04A5E21E64A97E00B55D93 /* Build configuration list for PBXProject "Instagraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F04A5F91E64A97F00B55D93 /* Debug */,
+				3F04A5FA1E64A97F00B55D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F04A5FB1E64A97F00B55D93 /* Build configuration list for PBXNativeTarget "Instagraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F04A5FC1E64A97F00B55D93 /* Debug */,
+				3F04A5FD1E64A97F00B55D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F04A5DF1E64A97E00B55D93 /* Project object */;
+}
